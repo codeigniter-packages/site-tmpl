@@ -1,0 +1,14 @@
+version: '2'
+
+
+services:
+
+    site:
+      image: richarvey/nginx-php-fpm
+      ports:
+        - "10081:80"
+      volumes:
+        - "./:/var/www/html"
+      environment:
+        - WEBROOT=/var/www/html/src
+        - RUN_SCRIPTS=1

@@ -1,0 +1,16 @@
+{
+    "require": {
+        "codeigniter-packages/loader":"dev-master",
+        "codeigniter-packages/remap":"dev-master",
+        "codeigniter-packages/installer":"dev-master",
+        "codeigniter-packages/theme-bootstrap":"dev-master",
+        "codeigniter/framework":"^3.1.9"
+    },
+    "config": {
+        "vendor-dir": "/var/www/html/src/vendor"
+    },
+    "repositories": {
+       
+        
+    }
+}
