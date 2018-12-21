@@ -1,6 +1,8 @@
 # site-tmpl
 
-## how to use
+## How to use
+
+more docker image info =>https://github.com/richarvey/nginx-php-fpm
 
 ```
 
@@ -14,11 +16,25 @@ you need set base_url in `application/config/config.php` otherwise it can not ge
 
 
 
-## composer
+## Composer
 
 ```
 composer require codeigniter-packages/paginate --working-dir=/var/www/html/conf/composer
 
 ```
 
+
+## Trouble shooting
+
+#### I can't change my file at outside of docker container
+
+reset file permission
+
+```
+
+sudo chown -R $USER *
+sudo chgrp -R $USER *
+
+
+```
 
